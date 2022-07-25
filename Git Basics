@@ -1,0 +1,33 @@
+# Git Basic Commands:
+### Initial Configuration:
+
+git config --global user.name "dee"
+git config --global user.email "deepashannkar@gmail.com"
+
+
+### Git CLoning : 
+**Create repositories**
+A new repository can either be created locally, or an existing repository can be cloned. When a repository was initialized locally, you have to push it to GitHub afterwards.
+git init
+
+The git init command turns an existing directory into a new Git repository inside the folder you are running this command. After using the git init command, link the local repository to an empty GitHub repository using the following command:
+
+$ git remote add origin [url]
+
+### Branches :
+
+Pulling latest -> git pull
+branches list -> git branch -a
+Create new branch -> git checkout -b branchname
+Switch between branches -> git checkout branchname
+
+### Change Manipulation : 
+ To show modified files (changed files) -> git status
+ To add changes to staging  -> git add .(all changes)
+ git add filename/foldername (if specific)
+ Commiting staged changes -> git commit -m "commit message"
+ Pushing changes to dev branch -> git push
+ Pushing changes to master : 
+ git checkout master
+ git merge develop
+ git push
